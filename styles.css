@@ -1,0 +1,92 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f6fa;
+  margin: 0;
+  padding: 0;
+}
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+#products, #cart {
+  max-width: 400px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+  padding: 20px;
+}
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+.product:last-child {
+  border-bottom: none;
+}
+.product button {
+  background: #4cd137;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 14px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+.product button:hover {
+  background: #44bd32;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #eee;
+}
+li:last-child {
+  border-bottom: none;
+}
+li button {
+  background: #e84118;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background 0.2s;
+}
+li button:hover {
+  background: #c23616;
+}
+#cart div {
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: right;
+  color: #222;
+}
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 30px 0;
+}
+
+.carts-btns {
+  display: flex;
+  gap: 10px; /* Увеличиваем расстояние между кнопками */
+  align-items: center;
+}
+
+li button.delete {
+  margin-left: 10px;
+}
